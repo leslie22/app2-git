@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion Móvil</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app2.min.css"
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+<!-- grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/Celular.png','imagenes/imag2.png','imagenes/gamabaja2.png','imagenes/compañias.png','imagenes/futuro2.png')">
+
+<div data-role="page" id="Principal" data-theme="d">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+<h1>TELEFONIA CELULAR</h1>
+</div>
+<div data-role="main" class="ui-content">
+</div>
+<div>
+<ul data-role="listview" data-theme="d" class="ui-listview ui-group-theme-d">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Qué es un teléfono Celular?</h2>
+<p>Definición</p>
+</a>
+</li>
+<li classs="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Historia del teléfono</h2>
+<p>Se muestra información sobre la historia de los telefonos celulares</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Clasificación de los celulares de acuerdo a su gama</h2>
+<p>Muestra ejemplos y caracteristicas de los celulares según su gama.</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Compañias en México</h2>
+<p>Se muestran las compañias en México que manejan el servicio de Telefonia Celular</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Telefonos del futuro</h2>
+<p>Muestra ejemplos de telefonos del futuro</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="c" data-position="fixed">
+<div>
+<img src="imagenes/logo.png" width="46" height="46">
+</div>
+<div>
+<h4>Aplicacion Dos</h4>
+<h4>Leslie Arcos Prieto</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="d">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+<h1>Definición</h1>
+</div>
+<div data-role="content" align="center">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Teléfono Celular</h2>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/c1.png" width="38%" height="40%">
+</div>
+</div>
+</div>
+<div>
+<p> Teléfono móvil (o teléfono celular) Aparato telefónico de pequeño tamaño, portátil, sin hilos ni cables externos, para poder hablar desde cualquier lugar, siempre que sea dentro del área de cobertura del servicio que lo facilita.</p>
+<p><center><img src="imagenes/definicion.png" width="535" height="237" alt="definicion"></center></p>
+<p>Un <strong>teléfono celular</strong> es un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales. </p>
+<p>* Su principal característica es su portabilidad, que permite comunicarse desde casi cualquier lugar. Aunque su principal función es la comunicación de voz, como el teléfono convencional, su rápido desarrollo ha incorporado otras funciones como son cámara fotográfica, agenda, acceso a reproducción de video e incluso Sistema de posicionamiento global(GPS) y reproductor mp3.</p>
+<p><center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/imag2.png',1)"><img src="imagenes/imag1.png" width="285" height="305" id="Image19"></a></center></p>
+</div>
+<div data-role="footer" data-theme="d" data-position="fixed">
+<h4>Aplicacion Dos,LAP</h4>
+</div>
+</div>
+	
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="d">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+<h1>Historia del teléfono celular</h1>
+</div>
+<div data-role="content" align="center">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Evolución</h2>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/evolucion.png" width="71%" height="34%">
+</div>
+</div>
+</div>
+<div>
+
+  <p>La historia de la telefonía celular se remonta a los años 40s, cuando motivada por la segunda guerra mundial, la empresa Motorola desarrollo un teléfono móvil llamado Handie Talkie H12-16, este aparato usaba ondas de radio que para ese momento no superaban  los 60 MHz.</p>
+  <p><center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Sustitucion','','imagenes/Celular.png',1)"><img src="imagenes/PrimerTelefono.png" width="190" height="195" id="Sustitucion"></a></center></p>
+  <h3>Historia y desarrollo de los móviles, clasificación generaciones:</h3>
+  <p><strong>Primera generación 1G</strong></p>
+  <p>El primer teléfono móvil fue el NMT 450 (Nordic Mobile Telephony 450 MHz), desarrollado por Ericsson, este aparato ,todavía usaba las señales de radio con modulación de frecuencia.</p>
+  <p>Para esta época los teléfonos todavía eran aparatos grandes y pesados, pero constituían un gran avance en términos de comunicación móvil. <br>
+    Posteriormente se avanzó a frecuencias de radio (900 MHz) superiores a las ya conocidas.</p>
+  <p>Además del sistema NTM se desarrollaron simultáneamente otros sistemas como AMPS (Advanced Mobile Phone System) en EEUU y TACS (Total Access Comunication System).</p>
+  <p><center><img src="imagenes/PrimeraGeneraciin.png" width="537" height="213" alt="Generacion"></center></p>
+  <p><strong>Segunda Generación 2G</strong></p>
+  <p>La segunda generación nace a principios de los años 90s, utiliza sistemas GSM, IS-136, iDEN e IS-95 con frecuencias de 900 y 1800 MHz.</p>
+  <p>En esta generación se abandona el uso de ondas de radio y se da paso a la era digital de las comunicaciones. Esto ofrece grandes ventajas como la calidad de voz, mejora en la seguridad y bajos costos de operación.</p>
+  <p>Se establece como estándar el GSM (Global Sistem for Mobile communications o Groupe Spécial Mobile ). Este estándar da paso con el tiempo al CDMA, que incluia nuevas ventajas sobre su predecesor. Esta etapa de transición en la telefonía celular se le como generación 2.5.</p>
+  <p><center><img src="imagenes/SegundaGeneraion.png" width="457" height="187" alt="SegundaG"></center></p>
+  <p><strong>Tercera generación 3G</strong></p>
+  <p>La tercera generación se caracteriza por ampliar características como ancho de banda y manejo de datos y ofrecer nuevos servicios como la teleconferencia, televisión , acceso pleno a internet y descarga de archivos.</p>
+  <p>En este momento el desarrollo tecnológico ya posibilita un sistema totalmente nuevo: UMTS (Universal Mobile Telecommunications System).<br>
+    Actualmente el sistema sigue siendo desarrollado, tanto en términos de tecnología y de mercadeo.</p>
+  <p><center><img src="imagenes/TerceraGeneracion.png" width="387" height="172" alt="TercerG"></center></p>
+  <p>&nbsp;</p>
+</div>
+<div data-role="footer" data-theme="d" data-position="fixed">
+<h4>Aplicacion Dos,LAP</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="d">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+<h1>Clasificación de los celulares de acuardo a su gama</h1>
+</div>
+<div data-role="content" align="center">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Clasificación según su gama</h2>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/Gama.png" width="81%" height="56%">
+</div>
+</div>
+</div>
+<div>
+  <h4>Dentro de lo que es terminales móviles o celulares existen tres grandes grupos:  los de gama baja, los de gama media y por ultimo de gama alta. Estos tres grandes grupos se diferencian en prestaciones y por supuesto en el precio.</h4>
+  <p><br>
+    <strong>Gama Baja:</strong><br>
+    Son aquellos que poseen un uso muy limitado, incluso pueden llegar a cumplir la función de realizar llamadas. La pantalla de estos dispositivos carece de gran resolución y tamaño,el costo es muy bajo.</p>
+  <p>Ej. de celulares de gama baja: Samsung M110,Sony Ericsson k205,Motorola w375,Nokia 2600</a> y el  Nokia 2680</a></p>
+  <p><center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/gamabaja2.png',1)"><img src="imagenes/gamabaja.png" width="295" height="201" id="Image"></a></center><br>
+  </p>
+  <p><strong>Gama Media:</strong><br>
+    Este grupo es el mas comercializado, debido a la buena relación costo-prestaciones, por lo general se adquiere este tipo de móviles por el motivo de querer escuchar música MP3, poder personalizarlo con wallpapers, ringtones, temas, o poder tomar fotografías a una calidad media, entre otras funcionalidades.</p>
+  <p>Ej. de celulares de gama media: Nokia 5300,Motorola L6,LG KP220,Nokia 6300,Alcatel OT-C701</a>.</p>
+  <p><center><img src="imagenes/gamamedia.png" alt="gamamedia" width="505" height="171"></center></p>
+  <p><strong>Gama Alta:</strong></p>
+  <p>Celulares para un publico que sabe lo que quiere, grandes prestaciones tales como <span id="IL_AD6">GPS</span>(posicionamiento global), Wifi (Internet inalámbrico) camara fotográfica superior a 3MP con excelente calidad y pantallas de gran resolución. Sin duda son los celulares mas completos, pero caros.Por lo general el costo de estos equipos superan los $6000 pesos.</p>
+  <p>Ej. de celulares gama alta: Nokia N96, iPhone Motorola V8, Samsung i900,Sony Ericsson c510</p>
+  <p><center><img src="imagenes/gamaalta.png" alt="GamaAlta" width="528" height="163"></center></p>
+  </div>
+
+<div data-role="footer" data-theme="c" data-position="fixed">
+<h4>Aplicacion Dos,LAP</h4>
+</div>
+</div>
+
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true"data-theme="d">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+<h1><span id="Operadores_nacionales_con_red_propia_.28OMR.29"><center>Operadores nacionales con red propia (OMR)</center></span></h1>
+</div>
+<div data-role="content" align="center">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Compañias de celulares telefónicos</h2>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/compa1.png" width="79%" height="40%">
+</div>
+</div>
+</div>
+<div>
+  <ul>
+    <li><a href="http://www.telcel.com/" > Telcel</a> (subsidiaria de América Móvil: operando bajo TDMA (Análogo y Digital), GSM (2G),GPRS(2.5G), EDGE 2.75G),UMTS(3G), HSPA y LTE(4G) con un 72.23% de cobertura en el país.</li>
+	  <li><a href="https://www.movistar.com/es/">Movistar:</a> operando también bajo los estándares CDMA (Digital),GSM (2G),GPRS (2.5G), EDGE (2.75G),UMTS(3G), HSDPA  (3.5G), HSUPA (3.75G) y LTE</a> (4G) con un 56.78% de cobertura en el país.</li>
+  <li><a href="https://www.att.com.mx/">AT&amp;T México:</a> operando bajo CDMA(Digital) y EV-DO (3G sobre CDMA),GSM (2G),GPRS (2.5G),EDGE (2.75G), UMTS (3G),HSPA (3.9G) y 4G LTE(en algunas ciudades solamente), utiliza también iDEN y HSDPA, con un 73.54% de cobertura en el país. Cabe destacar que tras la combinación de las redes iusacell-nextel se complementa la red que ya está unificada.</li>
+</ul>
+<p><center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/compañias.png',1)"><img src="imagenes/c2.png" width="485" height="210" id="Image20"></a></center></p>
+<p><center></center></p>
+<h4><center><span>Operadores móviles virtuales (OMV).</span></center></h4>
+<p>Con la aparición de las redes GSM Y la optimización de CDMA al estándar EV-DO se planteó la posibilidad de acceder a Internet mediante las redes de telefonía móvil, dando así apertura a este servicio del cual se reporta una demanda sostenible.</p>
+<p>En México existen tres operadores móviles con red propia Telcel, Movistar yAT&amp;T) todos ofrecen el servicio de acceso a transferencia de datos. Telcel presta el servicio mediante  WAP, GPRS (EDGE), 3G y LTE (4G), esta última, solo en ciertas ciudades.</p>
+<p>Movistar mediante WAP, GPRS, EDGE, 3G, 3.5G, 3.75G y LTE (4G), también siendo esta última, comercializada solo en ciertas ciudades por el momento. AT&T mediante WAP, iDEN, 3G y LTE (4G). Los estados con más empresas telefónicas es estado de México y Veracruz.</p>
+<p>Telcel y AT&amp;T cuentan con la cobertura 4G más amplia del país. Así mismo, en tecnología son las que más avanzadas se encuentran.Movistar por su parte, ha adoptado el mismo estándar tecnológico de las primeras 2 compañías, para competir con ellas.</p>
+</div>
+<div data-role="footer" data-theme="d" data-position="fixed">
+<h4>Aplicacion Dos,LAP</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="d">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="d">
+<h1> LOS CELULARES DEL FUTURO</h1>
+</div>
+<div data-role="content" align="center">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Teléfonos celulares del futuro</h2>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/futuro.png" width="75%" height="36%">
+</div>
+</div>
+</div>
+<div>
+  <p>Los <strong>celulares</strong> se han convertido en parte esencial de nuestra vida cotidiana, tanto así que no concebimos salir sin ellos y menos convivir sin <strong>las nuevas aplicaciones</strong> que estos dispositivos traen.</P>
+  
+  <P>Actualmente existen varios prototipos de celulares que aún no han salido al mercado, pero resultan tan espectaculares que sin duda, vale la pena conocer. ¿Quieres verlos?</p>
+  <P><strong>1.- NOKIA MORPH 4</strong>	</p>
+  <p><center><img src="imagenes/nokia.png" width="537" height="213"></center></p>
+  <P>Nokia junto a la Uimagenes/nokia.pngniversidad de Cambridge crearon un celular moldeable vía <strong>nanotecnología</strong>, denominado &ldquo;Morph&rdquo;.<br>
+     <br>
+    Este celular es como salido de una película futurista. Lo más sorprendente es su increíble capacidad de moldearse en diferentes formas. Entre otro de sus atractivos destaca además su gran panel para ver videos.<br>
+     <br>
+    Otra de las novedades de este súper teléfono es que posee una <strong>superficie &ldquo;auto-lavable&rdquo;</strong> y chips electrónicos totalmente transparentes al ojo humano.</p>
+  <p><strong>2.-NOKIA 888</strong></p>
+  <p><center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('nokia888','','imagenes/futuro2.png',1)"><img src="imagenes/telefonoFuturo.png" width="495" height="225" id="nokia888"></a></center></p>
+  
+ 
+  <p><strong>Es el primer móvil flexible</strong> creado por el turco Tamer Nakisci, flamante ganador de los Premios de Diseño de los Países Bajos.<br>
+     <br>
+    Está diseñado para otorgar la máxima libertad y diversión, ya que <strong>puede cambiar de forma según las necesidades del usuario</strong>, gracias a su batería líquida. Puedes llevarlo como pulsera, enrollado en el bolsillo o como prefieras. Cuando recibe una llamada adopta la forma de los teléfonos tradicionales.<br>
+     <br>
+    Este prototipo permitiría enviar formas del teléfono a otros usuarios, por ejemplo si quieres mandarle un corazón a tu novia, sólo haz que tu teléfono se convierta en un corazón. De momento no saldrá al mercado.</p>
+  <p><strong>3.-BLACK BOX</strong></p>
+  <p><center><img src="imagenes/telefono2.png" alt="" width="434" height="176"/></center></p>
+  <p>Modelo que pertenece a BenQ-Siemens y que ha sido catalogado de impresionante, porque incorpora <strong>tecnología touch</strong>, como medio de navegación, tanto en la panatalla como en todo el cuerpo del dispositivo. <br>
+     <br>
+    Al parecer la interfaz será bastante sencilla de utilizar. Pero esta maravilla tardará un poco en ver la luz, ya que aún no tiene fecha de lanzamiento.</p>
+</div>
+<div data-role="footer" data-theme="d" data-position="fixed">
+<h4>Aplicacion Dos,LAP</h4>
+</div>
+</div>
+
+
+
+</body>
+</html>
